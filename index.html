@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Live Coding Challenge 1</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <input type="number" id="num1" />
+    <input type="number" id="num2" />
+    <div class="button">
+      <button onclick="add() ">+</button>
+      <p>Answer = <input id="demo" /></p>
+
+      <script>
+        function add() {
+          let a, b, sum;
+          a = parseInt(document.getElementById("num1").value);
+          b = parseInt(document.getElementById("num2").value);
+          sum = a + b;
+          document.getElementById("demo").value = sum;
+        }
+      </script>
+
+      <button onclick="substraction()">-</button>
+      <p>Answer= <input id="dem" /></p>
+      <script>
+        function substraction() {
+          let a, b, sub;
+          a = parseInt(document.getElementById("num1").value);
+          b = parseInt(document.getElementById("num2").value);
+          sub = a - b;
+          document.getElementById("dem").value = sub;
+        }
+      </script>
+
+      <button onclick="multiplication()">x</button>
+      <p>Answer= <input id="de" /></p>
+      <script>
+        function multiplication() {
+          let a, b, multi;
+          a = parseInt(document.getElementById("num1").value);
+          b = parseInt(document.getElementById("num2").value);
+          multi = a * b;
+          document.getElementById("de").value = multi;
+        }
+      </script>
+
+      <button onclick="divide()">/</button>
+      <p>Answer= <input id="d" /></p>
+      <script>
+        function divide() {
+          let a, b, divd;
+          a = parseInt(document.getElementById("num1").value);
+          b = parseInt(document.getElementById("num2").value);
+          divd = a / b;
+          document.getElementById("d").value = divd;
+        }
+      </script>
+    </div>
+  </body>
+</html>
